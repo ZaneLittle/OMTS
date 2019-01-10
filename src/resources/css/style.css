@@ -1,0 +1,341 @@
+body
+{
+	background-image: url("../images/3px-tile.png");
+	background-color: #0E2B4F;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: left;
+	height: 100%;
+	margin:0;
+	overflow: auto
+}
+
+html
+{
+	height: 100%;
+	margin:0;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.body
+{
+	margin: 0 auto;
+	width: 75%;
+	clear: both;
+}
+
+.mainHeader
+{
+	width: 100%;
+	height: 160px;
+}
+
+.mainHeader h1
+{
+	float: left;
+	font-family: 'Monoton', cursive;
+	text-decoration: none;
+	background-color: transparent;
+	color: #CCCCCC;
+	margin: 0;
+	padding: 1% 0;
+	font-size: 45px;
+	vertical-align: middle;
+}
+.mainHeader h1 a
+{
+	color: white;
+	height: 100%;
+}
+
+.mainHeader table
+{
+	padding: 2% 0;
+	width: 15%;
+	height: 100%;
+	float: right;
+}
+
+.mainHeader table tr
+{
+	width: 100%;
+}
+
+
+.mainHeader table td
+{
+	padding: 5% 0;
+	margin: 0%;
+}
+
+.mainHeader table a
+{
+	font-family: 'Roboto Condensed', sans-serif;
+
+	border: 2px solid #CCCCCC;
+
+	float: right;
+	width: 100%;
+	height: auto;
+	background-color: #CCCCCC;
+	padding: 8px;
+	border-radius: 10px;
+	font-size: 100%;
+	color: black;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.mainHeader table a:hover
+{
+	border: 2px solid #CCCCCC;
+	border-radius: 10px;
+	background-color: transparent;
+	color: #CCCCCC;
+}
+
+.movieSearch .header
+{
+	width: 96%;
+	background-color: #999999;
+	margin-top: 2%;
+	padding: 2%;
+	border-radius: 10px 10px 0px 0px;
+	height: 40px;
+}
+
+.movieSearch .header button
+{
+	float: left;
+	font-family: 'Roboto Condensed', sans-serif;
+
+	width: 10%;
+	padding: 1%;
+	margin: 0 ;
+	background-color: #CCCCCC;
+	border: none;
+
+	font-size: 100%;
+}
+
+.movieSearch .header .theatresContent, .movieSearch .header .filtersContent
+{
+	background-color: #CCCCCC;
+	float: left;
+	font-family: 'Roboto Condensed', sans-serif;
+	border:none;
+	font-size: 95%;
+	padding: 1%;
+}
+
+.movieSearch .header .filtersContent
+{
+	width: 8%;
+}
+
+.movieSearch .header .theatresContent
+{
+	width: 12%;
+	border-radius: 10px 0 0 0;
+	text-align: center;
+	border: none;
+	outline: none;
+}
+
+.movieSearch .header .theatresContent:hover, 
+.movieSearch .header .filtersContent:hover
+{
+	background-image: url("../images/3px-tile.png");
+	background-color: #0E2B4F;
+	color: #CCCCCC;
+}
+
+.movieSearch .header .theatresContent:focus
+{
+	outline: none;
+}
+
+.movieSearch .header .filtersContent:focus
+{
+	outline: none;
+}
+
+.movieSearch .header .theatresContent option
+{
+	border: none;
+	outline: none;
+	padding: 10%;
+	margin: 100px; 
+	background-color: #CCCCCC;
+	color: black;
+}
+
+.movieSearch .header .theatresContent option:hover
+{
+	color: #CCCCCC;
+	background-image: url("../images/3px-tile.png");
+	background-color: #0E2B4F;
+}
+
+.movieSearch .header .filtersContent option
+{
+	border: none;
+	outline: none;
+	padding: 10%;
+	background-color: #CCCCCC;
+	color: black;
+}
+
+.movieSearch .header .filtersContent option:hover
+{
+	color: #CCCCCC;
+	background-image: url("../images/3px-tile.png");
+	background-color: #0E2B4F;
+}
+
+.movieSearch .header input:focus, .movieSearch .header button:focus
+{
+	outline: none;
+}	
+
+.movieSearch .header button:hover
+{
+	background-image: url("../images/3px-tile.png");
+	background-color: #0E2B4F;
+	color: #CCCCCC;
+}
+
+.movieSearch .header button.submitButton
+{
+	border-radius: 0 10px 0 0;
+}
+
+.movieSearch .header input
+{
+	float: left;
+	font-family: 'Roboto Condensed', sans-serif;
+	border:none;
+	font-size: 100%;
+	width: 68%;
+	padding: 1%;
+}
+
+.movieSearch .searchBody
+{
+	width: 96%;
+	background-color: #CCCCCC;
+	padding: 2%;
+	min-height: 100px;	
+}
+
+.movieSearch .searchBody .forTheScrollBar
+{
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.movieSearch .searchBody .searchWindow
+{
+	width: 98%;
+	background-color: white;
+	overflow-y: scroll;
+	padding: 1%;
+	min-height: 100px;	
+	max-height: 45vh;
+}
+
+.movieSearch .searchBody .searchWindow .searchResults
+{
+	width: 100%;
+	border-bottom: 2px solid #0E2B4F;
+	border-top: 2px solid #0E2B4F;
+}
+
+.movieSearch .searchBody .searchWindow .searchResults th
+{
+	border-bottom: 2px solid #0E2B4F;
+	/*border-top: 2px solid #0E2B4F;*/
+	text-align: center;
+	color: black;
+	padding: 1% 0;
+	font-size: 110%;
+}
+
+.movieSearch .searchBody .searchWindow .searchResults td
+{
+
+	color: black;
+	/*border-top: 1px solid #0E2B4F;*/
+	padding: 1% 1%;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.movieSearch .searchBody .searchWindow .searchResults tr:nth-child(n+3) td
+{
+	border-top: 1px solid #0E2B4F;
+}
+
+.movieSearch .footer
+{
+	width: 98%;
+	background-color: #999999;
+	padding: 1%;
+	border-radius: 0px 0px 10px 10px;
+	height: 10px;
+	margin-bottom: 5%;
+}
+
+.settPageContent
+{
+	width: 100%;
+}
+
+.settingPageContent .sideBar
+{
+	margin-top: 3%;
+	width: 30%;
+	float: left;
+}
+
+.settingPageContent .userButtons
+{
+	padding-bottom: 5%;
+}
+
+.settingPageContent .adminButtons
+{
+	padding-top: 5%;
+	border-top: 2px solid #CCCCCC;
+}
+
+.settingPageContent .sideBar button
+{
+	font-size: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #CCCCCC;
+	padding: 5% 3%;
+	margin: 3% 2% 3% 2%;
+	width: 96%;
+	border: 2px solid #CCCCCC;
+	outline: none;
+	border-radius: 10px;
+}
+
+.settingPageContent .sideBar button:hover
+{
+	cursor: pointer;
+	color: #CCCCCC;
+	background: transparent;
+}
+
+.settingPageContent .settingsContent
+{
+	float: left;
+	width: 67%;
+	padding-left: 3%;
+}
