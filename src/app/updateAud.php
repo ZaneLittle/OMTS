@@ -1,0 +1,51 @@
+<?php
+$host = "localhost";
+$username = "root";
+$password = "";
+$dbname = "OMTSDB";
+
+try{
+	$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+	if(isset($_POST['updateAud']))
+	{
+		$stmt = "UPDATE theatre
+			SET theatre_num = '" . $_POST['theatre_num'] . "',
+				max_seats = '" . $_POST['max_seats'] . "',
+				screen_size = '" . $_POST['screen_size'] . "' 
+				WHERE " . $_POST['old_entry'] . ";";
+
+		$conn->query($stmt);
+
+		echo '<script>window.alert("Updated Info");</script>';
+	}
+	else if(isset($_POST['removeBtn']))
+	{
+		$stmt = "DELETE FROM theatre WHERE " . $_POST['old_entry'] . ";";
+
+		$conn->query($stmt);
+
+		echo '<script>window.alert("Deleted Theatre");</script>';
+	}
+	else if(isset($_POST['addAud']))
+	{
+		$stmt = "INSERT INTO theatre VALUES 
+			('". $_POST['theatre_num'] ."', 
+			'". $_POST['max_seats'] ."',
+			'". $_POST['screen_size'] ."',
+			'". $_POST['theatre_name'] ."');";
+
+		$conn->query($stmt);
+
+		echo '<script>window.alert("Added Theatre");</script>';
+	}
+
+}
+catch(PDOException $e) 
+{
+	echo "Error: " . $e->getMessage();
+}
+$conn = null;
+echo '<script>window.location.href = "accountPage.php";</script>';
+?>
