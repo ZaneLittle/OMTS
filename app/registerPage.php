@@ -56,7 +56,7 @@
 				<td><input type="text" name="enterCreditExpiryMonth" class="enterCreditExpiryMonth" placeholder="Enter Card Expiry Month..."></td>
 			</tr>
 			<tr>
-				<td><button class="submitRegisterInfo" type="submit" onclick="return register()">Regsiter</button></td>
+				<td><button class="submitRegisterInfo" type="submit" onclick="return register()">Register</button></td>
 			</tr>
 		</table>
 	</form>
