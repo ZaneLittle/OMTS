@@ -24,10 +24,10 @@
 		</table>
 	</header>
 <?php
-$host = "localhost";
-$username = "root";
-$password = "";
-$dbname = "OMTSDB";
+$host = "us-cdbr-iron-east-02.cleardb.net";
+$username = "b5e88e9076fea0";
+$password = "b3cc4ff5";
+$dbname = "heroku_ae61fbadec5f8bf";
 
 try
 {
